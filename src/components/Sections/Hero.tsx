@@ -21,7 +21,7 @@ const Hero: FC = memo(() => {
           src={imageSrc}
         />
         <div className="z-10  max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/75 p-6 text-center shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>
             {description}
             <div className="flex gap-x-4 text-neutral-100">
@@ -35,7 +35,9 @@ const Hero: FC = memo(() => {
                     primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white',
                   )}
                   href={href}
-                  key={text}>
+                  key={text}
+                  target="_blank"
+                  rel="noopener noreferrer">
                   {text}
                   {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                 </a>

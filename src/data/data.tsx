@@ -3,17 +3,12 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
-  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/updated-header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,7 +20,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/photo.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -44,8 +39,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'AJ Hennessy Portfolio',
+  description: "Welcome to my website!",
 };
 
 /**
@@ -69,18 +64,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm AJ Hennessy.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Kansas City-based <strong className="text-stone-100">Software Developer</strong>, currently working
+        at <strong className="text-stone-100">Burns & McDonnell</strong>, where I focus on developing 
+        robust and scalable solutions for everyday problems. Additionally, I am a recent graduate from the
+        Georgia Institute of Technology where I earned a <strong>Master's degree in Computer Science</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, I enjoy taking my dog, <strong>Jinx</strong>, to explore Kansas City to try new foods and see new places.
       </p>
     </>
   ),
@@ -104,16 +98,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `As a Software Developer at Burns & Mac for the past two years, 
+                I have played a key role in building the technology stack from the ground up, 
+                developing tools that not only enhance the productivity of 800 staff members 
+                but are also scalable to meet the needs of over 12,000 staff members. 
+                My academic journey at Georgia Tech was specialized in Computing Systems, 
+                with a strong emphasis on Artificial Intelligence through my elective coursework.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Kansas City, MO', Icon: MapIcon},
+    {label: 'Age', text: '24', Icon: CalendarIcon},
+    {label: 'Graduate Study', text: 'Georgia Institute of Technology', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Burns & McDonnell', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -121,23 +116,6 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
   {
     name: 'Frontend development',
     skills: [
@@ -268,28 +246,38 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Fall 2021 - Fall 2023',
+    location: 'Georgia Institute of Technology',
+    title: 'Master of Science in Computer Science',
+    content: <p><p><strong>GPA:</strong> 3.8</p><p><strong>Languages:</strong> C++, Java, Python</p><p><strong>Relevant Coursework:</strong> Graduate Algorithms, Knowledge Based Artificial Intelligence (AI), Game AI, Network Security, Software Architecture & Design, Software Analysis & Test</p></p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Fall 2017 - Spring 2021',
+    location: 'Wichita State University',
+    title: 'Bachelor of Science in Computer Science',
+    content: <p></p>,
+  },
+  {
+    date: 'Fall 2017 - Spring 2021',
+    location: 'Wichita State University',
+    title: 'Mathematics Minor',
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Jan. 2022 - Present',
+    location: 'Burns & McDonnell',
+    title: 'Software Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        <p>Increase efficiency of the engineers' workflows through web-based applications.</p>
+        <p>Applications built with Angular 14 on the frontend, Python/NodeJS on the backend, a
+          database in SQL Server, and a Blob storage all hosted in Azure Services.</p>
+        <p>Responsible for creating a development, test, and production environment using Azure
+          DevOps and Azure Services.</p>
+        <p>Built Azure DevOps repository environment along with CI/CD pipeline.</p>
       </p>
     ),
   },
@@ -365,9 +353,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/aj-hennessy'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ajhennessy'},
 ];
