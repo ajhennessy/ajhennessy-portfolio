@@ -39,8 +39,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'AJ Hennessy Portfolio',
-  description: "Welcome to my website!",
+  title: 'AJ Hennessy',
+  description: 'Welcome to my website.',
 };
 
 /**
@@ -68,13 +68,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Kansas City-based <strong className="text-stone-100">Software Developer</strong>, currently working
-        at <strong className="text-stone-100">Burns & McDonnell</strong>, where I focus on developing 
-        robust and scalable solutions for everyday problems. Additionally, I am a recent graduate from the
-        Georgia Institute of Technology where I earned a <strong>Master's degree in Computer Science</strong>.
+        I'm a Kansas City-based <strong className="text-stone-100">Software Developer</strong>, currently working at{' '}
+        <strong className="text-stone-100">Burns & McDonnell</strong>, where I focus on developing robust and scalable
+        solutions for everyday problems. Additionally, I am a recent graduate from the <strong>Georgia Institute of Technology</strong> where
+        I earned a <strong>Master's degree in Computer Science</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, I enjoy taking my dog, <strong>Jinx</strong>, to explore Kansas City to try new foods and see new places.
+        In my free time, I enjoy taking my dog, <strong>Jinx</strong>, to explore Kansas City to try new foods and see
+        new places.
       </p>
     </>
   ),
@@ -120,15 +121,15 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 9,
+        name: 'Angular',
+        level: 8,
       },
       {
         name: 'Typescript',
-        level: 7,
+        level: 8,
       },
       {
-        name: 'GraphQL',
+        name: 'HTML/CSS',
         level: 6,
       },
     ],
@@ -137,32 +138,57 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
+        name: 'Python',
+        level: 8,
+      },
+      {
         name: 'Node.js',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'SQL',
+        level: 6,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'DevOps',
     skills: [
       {
-        name: 'React Native',
+        name: 'Azure Services',
+        level: 8,
+      },
+      {
+        name: 'Azure DevOps',
         level: 9,
+      },
+      {
+        name: 'Docker',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Other Skills',
+    skills: [
+      {
+        name: 'C++',
+        level: 7,
+      },
+      {
+        name: 'C#',
+        level: 6,
       },
       {
         name: 'Flutter',
         level: 4,
       },
       {
-        name: 'Swift',
+        name: 'Java',
+        level: 5,
+      },
+      {
+        name: 'React',
         level: 3,
       },
     ],
@@ -249,7 +275,16 @@ export const education: TimelineItem[] = [
     date: 'Fall 2021 - Fall 2023',
     location: 'Georgia Institute of Technology',
     title: 'Master of Science in Computer Science',
-    content: <p><p><strong>GPA:</strong> 3.8</p><p><strong>Languages:</strong> C++, Java, Python</p><p><strong>Relevant Coursework:</strong> Graduate Algorithms, Knowledge Based Artificial Intelligence (AI), Game AI, Network Security, Software Architecture & Design, Software Analysis & Test</p></p>,
+    content: (
+      <p>
+        <strong>GPA:</strong> 3.8
+        <br />
+        <strong>Languages:</strong> Python, C++, Java
+        <br />
+        <strong>Relevant Coursework:</strong> Graduate Algorithms, Knowledge Based Artificial Intelligence (AI), Game
+        AI, Network Security, Software Architecture & Design, Software Analysis & Test
+      </p>
+    ),
   },
   {
     date: 'Fall 2017 - Spring 2021',
@@ -267,29 +302,73 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Jan. 2022 - Present',
+    date: 'Jan. 2022 - Current',
     location: 'Burns & McDonnell',
     title: 'Software Developer',
     content: (
-      <p>
-        <p>Increase efficiency of the engineers' workflows through web-based applications.</p>
-        <p>Applications built with Angular 14 on the frontend, Python/NodeJS on the backend, a
-          database in SQL Server, and a Blob storage all hosted in Azure Services.</p>
-        <p>Responsible for creating a development, test, and production environment using Azure
-          DevOps and Azure Services.</p>
-        <p>Built Azure DevOps repository environment along with CI/CD pipeline.</p>
-      </p>
+      <ul className="list-disc ml-4">
+        <li>
+          Boosted workflow efficiency by developing web applications, achieving up to a 65% reduction in process times
+          for key operations
+        </li>
+        <li>
+          Designed and deployed full-stack solutions utilizing Angular 14 and a Python/NodeJS-based backend, enhanced by
+          Docker for consistent, environment-agnostic deployments
+        </li>
+        <li>
+          Managed databases and storage solutions using Azure Cosmos (transitioned from SQL Server) and Azure Blob
+          storage, ensuring high availability and scalability
+        </li>
+        <li>
+          Collaborated on the orchestration of development, testing, and production environments across Azure DevOps and
+          Azure Services, facilitating seamless change management and zerodowntime deployments to production
+        </li>
+        <li>
+          Implemented and refined the CI/CD pipeline in Azure DevOps, accelerating deployment processes by 20% and
+          significantly reducing manual intervention
+        </li>
+        <li>
+          Developed an automated testing framework as part of the CI/CD pipeline, increasing code coverage by 82% and
+          substantially improving code quality
+        </li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'May 2020 - May 2021',
+    location: 'US Air Force',
+    title: 'Software Developer (Senior Project)',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc ml-4">
+        <li>
+          Developed an advanced autonomous navigation system utilizing GPS and LIDAR technology to enhance terrain
+          adaptability for an all-terrain robot using C++ and ROS
+        </li>
+        <li>
+          Utilized simulation tools to rigorously test and validate code, ensuring high reliability and performance
+          under diverse operational conditions
+        </li>
+        <li>
+          Managed version control with Git, facilitating effective collaboration with team members and maintaining a
+          robust codebase across multiple development phases
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Sept. 2019 - Feb. 2020',
+    location: 'Keycentrix',
+    title: 'Software Developer Intern',
+    content: (
+      <ul className="list-disc ml-4">
+        <li>
+          Developed and implemented development tools and unit tests for C# applications, enhancing code coverage by 16%
+        </li>
+        <li>
+          Utilized JIRA for managing and tracking the completion of feature requests and bug fixes, improving issue
+          resolution efficiency and team agility
+        </li>
+      </ul>
     ),
   },
 ];
@@ -324,27 +403,23 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description:
+    "Interested in collaborating or learning more? Reach out or connect with me on LinkedIn or GitHub. Let's talk!",
   items: [
     {
-      type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'ajhennessy',
+      href: 'https://www.linkedin.com/in/aj-hennessy',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ajhennessy',
+      href: 'https://github.com/ajhennessy',
+    },
+    {
+      type: ContactType.Location,
+      text: 'Kansas City, MO',
+      href: 'https://www.google.com/maps/@39.0393519,-94.5385065,12z',
     },
   ],
 };
