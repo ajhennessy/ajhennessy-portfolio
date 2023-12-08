@@ -70,7 +70,7 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Kansas City-based <strong className="text-stone-100">Software Developer</strong>, currently working at{' '}
         <strong className="text-stone-100">Burns & McDonnell</strong>, where I focus on developing robust and scalable
-        solutions for everyday problems. Additionally, I am a recent graduate from the <strong>Georgia Institute of Technology</strong> where
+        solutions for everyday problems. Additionally, I am a recent graduate from the <strong>Georgia Institute of Technology</strong>, where
         I earned a <strong>Master's degree in Computer Science</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -100,7 +100,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `As a Software Developer at Burns & Mac for the past two years, 
-                I have played a key role in building the technology stack from the ground up, 
+                I have played a key role in building the technology stack from the ground up. This involved 
                 developing tools that not only enhance the productivity of 800 staff members 
                 but are also scalable to meet the needs of over 12,000 staff members. 
                 My academic journey at Georgia Tech was specialized in Computing Systems, 
@@ -312,7 +312,7 @@ export const experience: TimelineItem[] = [
           for key operations
         </li>
         <li>
-          Designed and deployed full-stack solutions utilizing Angular 14 and a Python/NodeJS-based backend, enhanced by
+          Designed and deployed full-stack solutions utilizing Angular 14 and a Python/NodeJS-based backend, which was enhanced by
           Docker for consistent, environment-agnostic deployments
         </li>
         <li>
