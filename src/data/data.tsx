@@ -104,7 +104,7 @@ export const aboutData: About = {
                 developing tools that not only enhance the productivity of 800 staff members 
                 but are also scalable to meet the needs of over 12,000 staff members. 
                 My academic journey at Georgia Tech was specialized in Computing Systems, 
-                with a strong emphasis on Artificial Intelligence through my elective coursework.`,
+                with a strong emphasis on Artificial Intelligence demonstrated by my elective coursework.`,
   aboutItems: [
     {label: 'Location', text: 'Kansas City, MO', Icon: MapIcon},
     {label: 'Age', text: '24', Icon: CalendarIcon},
