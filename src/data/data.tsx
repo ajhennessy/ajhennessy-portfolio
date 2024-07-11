@@ -460,7 +460,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Kansas City, MO',
+      text: 'Oklahoma City, OK',
       href: 'https://www.google.com/maps/@39.0393519,-94.5385065,12z',
     },
   ],
