@@ -68,14 +68,16 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Kansas City-based <strong className="text-stone-100">Software Developer</strong>, currently working at{' '}
-        <strong className="text-stone-100">Burns & McDonnell</strong>, where I focus on developing robust and scalable
-        solutions for everyday problems. Additionally, I am a recent graduate from the <strong>Georgia Institute of Technology</strong>, where
-        I earned a <strong>Master's degree in Computer Science</strong>.
+        I'm a Oklahoma City-based <strong className="text-stone-100">Software Engineer</strong>, currently working at{' '}
+        <strong className="text-stone-100">Microsoft</strong>, where I focus on developing robust and scalable data
+        pipelines for AI-driven solutions. My work includes optimizing data processing, enhancing system reliability,
+        and implementing advanced data integration techniques. Additionally, I am a recent graduate from the{' '}
+        <strong>Georgia Institute of Technology</strong> where I earned a{' '}
+        <strong>Master's degree in Computer Science</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, I enjoy taking my dog, <strong>Jinx</strong>, to explore Kansas City to try new foods and see
-        new places.
+        In my free time, I enjoy taking my dog, <strong>Jinx</strong>, to explore Oklahoma City City to try new foods
+        and see new places.
       </p>
     </>
   ),
@@ -99,17 +101,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `As a Software Developer at Burns & Mac for the past two years, 
-                I have played a key role in building the technology stack from the ground up. This involved 
-                developing tools that not only enhance the productivity of 800 staff members 
-                but are also scalable to meet the needs of over 12,000 staff members. 
+  description: `As a Software Design Engineer at Microsoft for the past 6 months, 
+                I have played a key role in building the data pipeline for an AI-Driven product from the ground up.
                 My academic journey at Georgia Tech was specialized in Computing Systems, 
                 with a strong emphasis on Artificial Intelligence demonstrated by my elective coursework.`,
   aboutItems: [
-    {label: 'Location', text: 'Kansas City, MO', Icon: MapIcon},
+    {label: 'Location', text: 'Oklahoma City, OK', Icon: MapIcon},
     {label: 'Age', text: '24', Icon: CalendarIcon},
     {label: 'Graduate Study', text: 'Georgia Institute of Technology', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Burns & McDonnell', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Microsoft', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -139,7 +139,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Python',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Node.js',
@@ -149,6 +149,14 @@ export const skills: SkillGroup[] = [
         name: 'SQL',
         level: 6,
       },
+      {
+        name: 'Azure Data Factory',
+        level: 9,
+      },
+      {
+        name: 'Azure Cosmos',
+        level: 8,
+      },
     ],
   },
   {
@@ -156,7 +164,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Azure Services',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Azure DevOps',
@@ -164,7 +172,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Docker',
-        level: 6,
+        level: 7,
       },
     ],
   },
@@ -302,7 +310,41 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Jan. 2022 - Current',
+    date: 'Feb. 2024 - Current',
+    location: 'Microsoft',
+    title: 'Software Design Engineer',
+    content: (
+      <ul className="list-disc ml-4">
+        <li>
+          Collaborated on the backend development of an AI product using GraphRAG, enabling the discovery of
+          relationships between entities within given datasets, improving data insights and analysis capabilities
+        </li>
+        <li>
+          Created data pipelines using Azure Data Factory, ensuring seamless data flow between Azure Blob storage
+          (parquets) and Azure Cosmos
+        </li>
+        <li>
+          Tuned parameters of the GraphRAG indexing engine, reducing indexing time by approximately 66% (from 6 hours to
+          2 hours), significantly accelerating the data pipeline
+        </li>
+        <li>
+          Developed and optimized steps of the data pipeline in Azure Databricks utilizing Python, resulting in a 15%
+          improvement in data processing efficiency
+        </li>
+        <li>
+          Implemented secure connections and integrations using Azure Managed Identities, enhancing security and access
+          management
+        </li>
+        <li>Created quality checks for data at each step of the pipeline, improving data integrity and accuracy</li>
+        <li>
+          Set up a logging system to Azure Application Insights and an Azure Monitor to oversee the data pipeline,
+          leading to a 35% increase in error detection, resolution speed, and operational efficiency
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Jan. 2022 - Feb. 2024',
     location: 'Burns & McDonnell',
     title: 'Software Developer',
     content: (
@@ -312,8 +354,8 @@ export const experience: TimelineItem[] = [
           for key operations
         </li>
         <li>
-          Designed and deployed full-stack solutions utilizing Angular 14 and a Python/NodeJS-based backend, which was enhanced by
-          Docker for consistent, environment-agnostic deployments
+          Designed and deployed full-stack solutions utilizing Angular 14 and a Python/NodeJS-based backend, which was
+          enhanced by Docker for consistent, environment-agnostic deployments
         </li>
         <li>
           Managed databases and storage solutions using Azure Cosmos (transitioned from SQL Server) and Azure Blob
